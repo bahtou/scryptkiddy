@@ -1,0 +1,21 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= title
+    block styles
+      link(rel="stylesheet", href="styles/normalize.css")
+      link(rel="stylesheet", href="styles/foundation.css")
+      link(rel='stylesheet', href='styles/style.css')
+    block scripts
+      script(src="js/vendor/custom.modernizr.js")
+
+  body
+    block content
+
+    block vendorScripts
+      script(src="js/vendor/jquery.js")
+      script(src="js/foundation.min.js")
+      script.
+        $(document).foundation();

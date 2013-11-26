@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .row
+    .small-5.small-centered.columns
+      h1 Sign up
+      form(id="signup", name="signup", method="post", action="/signup")
+        label(class="hidden-label", for="Email") Email
+        input(id="Email", name="Email", type="email", placeholder="Email", value="", class="", required, autofocus)
+        label(class='hidden-label', for="Passwd") Password
+        input(id="Passwd", name="Passwd", type="password", placeholder="Password", class="", required)
+        input(id="signmeup", name="signmeup", type="submit", value="Sign me up", class="")
